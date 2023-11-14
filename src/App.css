@@ -1,0 +1,108 @@
+/* src/App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+}
+
+.container {
+  width: 300px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+form {
+  width: 300px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #4caf50;
+}
+
+button {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  color: #666;
+}
+
+.logout-link {
+  cursor: pointer;
+  color: #007bff; /* Optional: Customize link color */
+  text-decoration: underline;
+  margin-top: 10px; /* Optional: Add margin for spacing */
+}
+
+.logout-link:hover {
+  color: #0056b3; /* Optional: Customize link color on hover */
+}
+
+.error {
+  color: #ff0000; /* Red color for errors */
+  margin-top: 5px; /* Optional: Add margin for spacing */
+  font-size: 14px; /* Optional: Adjust font size */
+}
+
+.success {
+  color: green; /* Red color for errors */
+  margin-top: 5px; /* Optional: Add margin for spacing */
+  font-size: 14px; /* Optional: Adjust font size */
+}
+
+.required {
+  color: red;
+  margin-left: 4px; /* Optional: Add some spacing after the label */
+}
+
