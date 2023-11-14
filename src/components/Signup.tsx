@@ -84,14 +84,18 @@ const Signup: React.FC = () => {
 
     if (response.ok) {
       setSuccessMsg('User Registered Successfully ! Please Login Now')
+			const result = await response.json();
+			localStorage.setItem('access_token', result.access_token);
+			// Redirect to home page after successful login
       setTimeout(() => {
         // Redirect to login page after successful signup
-        navigate('/login');
+        navigate('/home');
       }, 3000)
     } else {
-      // Handle signup error
+      // Handle login error
       console.error('Signup failed');
     }
+
   };
 
   return (
